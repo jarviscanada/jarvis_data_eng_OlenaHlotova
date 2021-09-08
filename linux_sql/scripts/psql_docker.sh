@@ -71,6 +71,7 @@ case $cmd in
 	echo "container stopped"
 	exit $?
 	;;
+	
 #check if the command is invalid
 *)
 	echo "Invalid command"
