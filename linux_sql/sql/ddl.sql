@@ -20,8 +20,8 @@ CREATE TABLE PUBLIC.host_usage
         timestamp               TIMESTAMP NOT NULL,
         host_id                 SERIAL NOT NULL REFERENCES host_info (id),
         memory_free             INT NOT NULL,
-        cpu_idle                INT NOT NULL,
-        cpu_kernel              INT NOT NULL,
+        cpu_idle                FLOAT NOT NULL,
+        cpu_kernel              FLOAT NOT NULL,
         disk_io                 INT NOT NULL,
         disk_available          INT NOT NULL,
 	CONSTRAINT timestamp_host_id PRIMARY KEY (timestamp, host_id)
