@@ -1,5 +1,3 @@
---create host_info table
-
 CREATE TABLE PUBLIC.host_info
 (
         id                      SERIAL NOT NULL PRIMARY KEY,
