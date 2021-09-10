@@ -2,16 +2,16 @@
 - [Introduction](#introduction)
 - [Quick Start](#quick-start)
 - [Implementation](#implementation)
-    - [Architecture](#architecture)
-    - [Scripts](#scripts)
-    - [Database Modeling](#database-modeling)
+    - [Architecture](##architecture)
+    - [Scripts](##scripts)
+    - [Database Modeling](##database-modeling)
 - [Test](#test)
 - [Deployment](#deployment)
 - [Improvements](#improvements)
 
 # Introduction
 
----
+
 The Linux Cluster Monitoring Agent (LCMA) was designed as a tool for Linux Cluster Administrator(LCA) team to record information about servers(computers) in the network.
 These servers are connected in a Linux cluster through internal IPv4 addresses. The cluster is running on Centos7. The LCMA will collect the host's hardware specifications as well as resource usage statically and dynamically.
 The collected data will be used to generate useful reports for future purposes (add/remove servers, check for hardware failures, data analysis).
@@ -19,7 +19,7 @@ The script will record the host's number of CPUs, its architecture and model, CP
 The data will be stored in a Postgresql Docker database (RDBMS) every minute using crontab. This script is using PSQL, Docker, Bash and other supporting technologies (Git, Google Cloud Platform, Linux CentOS 7, DBeaver).
 # Quick Start
 
----
+
 Currently, LCMA quick start was tested on Linux CentOS 7 (running on GCP's virtual machine) with pre-installed Docker Postgres image.
 [Install Docker on CentOS 7](https://docs.docker.com/engine/install/centos/). [Download Postgres image on Docker](https://hub.docker.com/_/postgres).
 1. Start a psql instance using `psql_docker.sh` script.
@@ -63,22 +63,24 @@ psql -h psql_host -U psql_username -d db_name -f sql/queries.sql
 ```
 # Implementation
 
----
+
 There are 3 shell scripts used in this project: `psql_docker.sh`, `host_info.sh`, `host_usage.sh` 
 there are 2 extra postgresql files made use for the database management: `ddl.sql`, `querries.sql`
 ## Architecture
 
----
+
 The diagram illustrates the architecture of Linux cluster with 3 hosts/servers. 
 Bash Scripts collect hardware data, and then store in into the psql instance running on Docker.
 * `host_info.sh` runs only ones and gathers host hardware. 
 Stores the data in the database 
 * `host_usage.sh` will be called every minute by `crontab` and will gather current host CPU and Memory usage. 
-Stores the data in the database
+Stores the data in the database.
+  <br/><br />
+
 ![](assets/architecture.png)
 ## Scripts
 
----
+
 Shell scripts are implemented as follows:
 * `psql_docker.sh` <br/>Create/start/stop a PSQL instance:<br />
     ```bash 
@@ -93,10 +95,10 @@ It will collect the hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, 
 * `host_usage.sh`
 <br/>Collects server data usage information and inserts it into PSQL instance.
   It will collect the timestamp, hostname (is a foreign key to host_info), amount of unused memory, cpu_idle, cpu_kernel, disk_io and disk_available.
-<br />
+  <br />
     ```bash
     bash scripts/host_usage.sh psql_host psql_port db_name psql_username psql_password
-    ```
+  ```
 * `crontab`
   <br/>Manages `host_usage.sh` to be executed every minute, 
 so server's information will be stored dynamically into the database<br />
@@ -115,7 +117,7 @@ so server's information will be stored dynamically into the database<br />
   ```
 ## Database Modeling
 
----
+
 The database consists of 2 tables. 
 Host_info stores hardware specifications and host_usage, which contains CPU and memory usage data.
 * `host_info` table schema 
@@ -145,13 +147,13 @@ Attribute  | Data Type | Constraint | Description
 `disk_available`|`INTEGER`|`NOT NULL` |Total available disk space (mB).
 # Test
 
----
+
 The LCMA scripts were tested on CentOS 7 Google Cloud Platform Virtual Machine, connected via SSH. 
 To achieve valid testing results, the bash scripts were executed with valid and invalid CLI arguments.
 To test SQL queries, was used SQL client software application - DBeaver.
 # Deployment
 
----
+
 To develop the LCMA the following steps were followed:
 * Set up Jarvis Remote Desktop (JRD) by creating VM instance on GCP (Google Cloud Platform) and installing there Linux CentOS 7
 * Download and install Docker
@@ -160,7 +162,7 @@ To develop the LCMA the following steps were followed:
 * Followed GitFlow branching model for better workflow organization
 # Improvements
 
----
+
 * The `host_usage.sh` can be set up to start execute automatically (e.g. when the computer/server turns on) 
 * Some Database backup might be needed.
 * Add another script, which will delete the old/unnecessary data (for servers that are not in use anymore)
