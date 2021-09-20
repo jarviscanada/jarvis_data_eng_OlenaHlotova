@@ -1,14 +1,14 @@
 # Olena Hlotova . Jarvis Consulting
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis a orci ac malesuada. Vivamus ligula elit, viverra eu ante porttitor, blandit convallis augue. Aliquam justo justo, mollis at lacus eu, rutrum finibus est. Vestibulum venenatis purus id accumsan pretium. In efficitur magna nec enim laoreet tincidunt. Ut libero metus, scelerisque nec eros vitae, sagittis pellentesque enim. Donec dictum felis volutpat, vehicula magna eu, imperdiet elit. Phasellus ut velit a massa efficitur faucibus. Sed volutpat, lacus sed sagittis luctus, elit.
+I am a forward-thinking Junior Data Engineer with a Bachelor's degree in Biomedical Engineering. In the past few years, I have proven myself focused and diligent in managing workloads and prioritizing tasks to meet deadlines. Working at Jarvis, I participated in multiple technical projects like Linux Monitoring Agent, Java Grepp and Twitter apps. Creating useful apps I and my friends can use makes me extremely happy. As an example, I wrote a Telegram bot that helps the user keep track of their fitness exercises daily. I am ready to make a direct impact, utilizing abilities in quality control and complex problem-solving to find the best solutions and achieve desirable results.
 
 ## Skills
 
 **Proficient:** Java, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git
 
-**Competent:** Pandas, NumPy, HTML/CSS, Docker, demo
+**Competent:** Pandas, NumPy, HTML/CSS, Docker, Keras
 
-**Familiar:** Keras, TensorFlow 2.0, JavaScript, Flask, Machine Learning
+**Familiar:** Google Cloud Platform, TensorFlow 2.0, JavaScript, Flask, Machine Learning
 
 ## Jarvis Projects
 
@@ -19,9 +19,9 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_OlenaHloto
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_OlenaHlotova/tree/master/core_java)]:
       
+  - Grep App: A Java app designed to imitate Linux 'grep' command. It allows user to find matching strings in files (using regex).
   - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
   - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
 
 **Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_OlenaHlotova/tree/master/springboot)]: Not started
 
@@ -56,8 +56,6 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_OlenaHloto
 
 ## Miscellaneous
 - Rice University Fundamentals of Computing Specialization (2021)
-- Freecodecamp Responsive Web Design (2021)
+- Freecodecamp Responsive Web Design Certificate (2021)
 - Winner
-- Basketball player
-- Competitive gaming
-- Volunteer, ABC Food bank: Ut enim ad minim veniam
+- Secretary General of Model of United Nations
