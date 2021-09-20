@@ -1,0 +1,134 @@
+{
+  "education": [
+    {
+      "awards_achievements": [
+        "Scholarship"
+      ],
+      "degree": "Bachelor of Applied Sciences",
+      "department": "Biomedical Engineering",
+      "duration": "2011-2015",
+      "school_name": "National Technical University of Ukraine KPI"
+    },
+    {
+      "awards_achievements": null,
+      "degree": "Advanced Diploma",
+      "department": "Biomedical Engineering Technology",
+      "duration": "2015-2017",
+      "school_name": "Centennial College"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_OlenaHlotova",
+  "highlighted_projects": [
+    {
+      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
+      "git_url": "https://github.com/jarviscanada/jarvis_profile_builder",
+      "name": "Web app for resturant"
+    },
+    {
+      "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
+      "git_url": null,
+      "name": "Machine Learning"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "Designed a Linux Cluster Monitoring Agent that can be used to record and monitor nodes/server hardware specifications and memory usage. Implemented the project on Linux CentOS 7 using docker container running PostrgeSQL image. Created a database to keep and analyze the gathered information. Activated crontab to run a bash script every minute to collect the data and insert it into the database. Created SQL queries to detect possible host failures and average memory usage per host.",
+      "git_url": "/linux_sql",
+      "name": "Cluster Monitor"
+    },
+    {
+      "description": [
+        "Grep App: A Java app designed to imitate Linux 'grep' command. It allows user to find matching strings in files (using regex).",
+        "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
+        "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+      ],
+      "git_url": "/core_java",
+      "name": "Core Java Apps"
+    },
+    {
+      "description": "Not started",
+      "git_url": "/springboot",
+      "name": "Springboot App"
+    },
+    {
+      "description": "Not Started",
+      "git_url": "/python_data_anlytics",
+      "name": "Python Data Analytics"
+    },
+    {
+      "description": "Not Started",
+      "git_url": "/hadoop",
+      "name": "Hadoop"
+    },
+    {
+      "description": "Not Started",
+      "git_url": "/spark",
+      "name": "Spark"
+    },
+    {
+      "description": "Not Started",
+      "git_url": "/cloud_devops",
+      "name": "Cloud/DevOps"
+    }
+  ],
+  "name": "Olena Hlotova",
+  "others": [
+    {
+      "bullets": [
+        "Rice University Fundamentals of Computing Specialization (2021)",
+        "Freecodecamp Responsive Web Design Certificate (2021)"
+      ],
+      "title": "Certificates"
+    },
+    {
+      "bullets": [
+        "Winner"
+      ],
+      "title": "Awards"
+    },
+    {
+      "bullets": [
+        "Secretary General of Model of United Nations"
+      ],
+      "title": "Activities/Hobbies"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis",
+      "description": "Designed and implemented multiple technical projects and applications using a wide range of technologies such as Java, RDBMS, Linux, Docker, Git. Managed a team of five using Agile scrum workflow approach during scrum meetings and sprints.",
+      "duration": "2021-present",
+      "title": "Software Developer"
+    },
+    {
+      "company": "Ace Physiotherapy",
+      "description": "Managed network performance, as well as diagnosed and resolved complex network problems. Wrote policies, procedures and manuals governing internal IT use. Identified computer hardware and software issues, performing troubleshooting techniques for remediation. Demonstrated strong analytical, troubleshooting and problem-solving skills.",
+      "duration": "2017-2021",
+      "title": "Medical Office Manage"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "Pandas",
+      "NumPy",
+      "HTML/CSS",
+      "Docker",
+      "Keras"
+    ],
+    "familiar": [
+      "Google Cloud Platform",
+      "TensorFlow 2.0",
+      "JavaScript",
+      "Flask",
+      "Machine Learning"
+    ],
+    "proficient": [
+      "Java",
+      "Linux/Bash",
+      "RDBMS/SQL",
+      "Agile/Scrum",
+      "Git"
+    ]
+  },
+  "summary": "I am a forward-thinking Junior Data Engineer with a Bachelor's degree in Biomedical Engineering. In the past few years, I have proven myself focused and diligent in managing workloads and prioritizing tasks to meet deadlines. Working at Jarvis, I participated in multiple technical projects like Linux Monitoring Agent, Java Grepp and Twitter apps. Creating useful apps I and my friends can use makes me extremely happy. As an example, I wrote a Telegram bot that helps the user keep track of their fitness exercises daily. I am ready to make a direct impact, utilizing abilities in quality control and complex problem-solving to find the best solutions and achieve desirable results."
+}

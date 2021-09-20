@@ -1,0 +1,123 @@
+# Preferred name (Characters only)
+name: "Olena Hlotova"
+# Your GitHub repo root URL
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_OlenaHlotova
+
+# Introduce yourself, your academic and professional background.
+# What excites you about the software industry and your passion. At least 80 words
+summary: I am a forward-thinking Junior Data Engineer with a Bachelor's degree in Biomedical Engineering. In the past few years, I have proven myself focused and diligent in managing workloads and prioritizing tasks to meet deadlines. Working at Jarvis, I participated in multiple technical projects like Linux Monitoring Agent, Java Grepp and Twitter apps. Creating useful apps I and my friends can use makes me extremely happy. As an example, I wrote a Telegram bot that helps the user keep track of their fitness exercises daily. I am ready to make a direct impact, utilizing abilities in quality control and complex problem-solving to find the best solutions and achieve desirable results.
+
+
+# Group your skills by level.
+# Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
+skills:
+  # At least 5 skills
+  proficient:
+    - Java
+    - Linux/Bash
+    - RDBMS/SQL
+    - Agile/Scrum
+    - Git
+  # At least 5 skills
+  competent:
+    - Pandas
+    - NumPy
+    - HTML/CSS
+    - Docker
+    - Keras
+  # At least 5 skills
+  familiar:
+    - Google Cloud Platform
+    - TensorFlow 2.0
+    - JavaScript
+    - Flask
+    - Machine Learning
+
+# List of Jarvis projects
+jarvis_projects:
+  - name: "Cluster Monitor"
+    git_url: "/linux_sql"
+    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Designed a Linux Cluster Monitoring Agent that can be used to record and monitor nodes/server hardware specifications and memory usage. Implemented the project on Linux CentOS 7 using docker container running PostrgeSQL image. Created a database to keep and analyze the gathered information. Activated crontab to run a bash script every minute to collect the data and insert it into the database. Created SQL queries to detect possible host failures and average memory usage per host.
+  - name: "Core Java Apps"
+    git_url: "/core_java"
+    description:
+      - "Grep App: A Java app designed to imitate Linux 'grep' command. It allows user to find matching strings in files (using regex)."
+      - "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+      - "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+
+  - name: "Springboot App"
+    git_url: "/springboot"
+    description: "Not started"
+  - name: "Python Data Analytics"
+    git_url: "/python_data_anlytics"
+    description: "Not Started"
+  - name: "Hadoop"
+    git_url: "/hadoop"
+    description: "Not Started"
+  - name: "Spark"
+    git_url: "/spark"
+    description: "Not Started"
+  - name: "Cloud/DevOps"
+    git_url: "/cloud_devops"
+    description: "Not Started"
+
+# List of personal or academic projects
+# Feel free to add more projects
+highlighted_projects:
+    #project name
+  - name: "Web app for resturant"
+    #URL is optional
+    git_url: "https://github.com/jarviscanada/jarvis_profile_builder"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+  - name: "Machine Learning"
+    git_url:
+    description: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+
+#List of professional experience
+#The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
+#The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
+professional_experience:
+  #Write your Jarvis role as a professional experience rather than training.
+  - title: "Software Developer"
+    company: "Jarvis"
+    duration: "2021-present"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Designed and implemented multiple technical projects and applications using a wide range of technologies such as Java, RDBMS, Linux, Docker, Git. Managed a team of five using Agile scrum workflow approach during scrum meetings and sprints."
+  - title: "Medical Office Manage"
+    company: "Ace Physiotherapy"
+    duration: "2017-2021"
+    description: "Managed network performance, as well as diagnosed and resolved complex network problems. Wrote policies, procedures and manuals governing internal IT use. Identified computer hardware and software issues, performing troubleshooting techniques for remediation. Demonstrated strong analytical, troubleshooting and problem-solving skills."
+
+#List of edcuation
+education: 
+  - school_name: "National Technical University of Ukraine KPI"
+    duration: "2011-2015"
+    degree: "Bachelor of Applied Sciences"
+    department: "Biomedical Engineering"
+    # optional
+    awards_achievements: 
+      - "Scholarship"
+  - school_name: "Centennial College"
+    duration: "2015-2017"
+    degree: "Advanced Diploma"
+    department: "Biomedical Engineering Technology"
+    awards_achievements: 
+
+#Optional section
+others:
+    #category
+  - title: "Certificates"
+    #list of items
+    bullets:
+      - "Rice University Fundamentals of Computing Specialization (2021)"
+      - "Freecodecamp Responsive Web Design Certificate (2021)"
+  - title: "Awards"
+    bullets:
+      - "Winner"
+  - title: "Activities/Hobbies"
+    bullets:
+      - "Secretary General of Model of United Nations"
+
