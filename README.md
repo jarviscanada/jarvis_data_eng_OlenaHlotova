@@ -1,6 +1,6 @@
 # Olena Hlotova . Jarvis Consulting
 
-I am a forward-thinking Junior Data Engineer with a Bachelor's degree in Biomedical Engineering. In the past few years, I have proven myself focused and diligent in managing workloads and prioritizing tasks to meet deadlines. Working at Jarvis, I participated in multiple technical projects like Linux Monitoring Agent, Java Grepp and Twitter apps. Creating useful apps I and my friends can use makes me extremely happy. As an example, I wrote a Telegram bot that helps the user keep track of their fitness exercises daily. I am ready to make a direct impact, utilizing abilities in quality control and complex problem-solving to find the best solutions and achieve desirable results.
+I am a forward-thinking Junior Data Engineer with a Bachelor's degree in Biomedical Engineering. I have proven myself focused and diligent in managing workloads and prioritizing tasks to meet deadlines. Working at Jarvis, I participated in multiple technical projects like Linux Monitoring Agent, Java Grepp and Twitter apps in the past few years. Creating useful apps people can use makes me extremely happy. For example, I wrote a Telegram bot that helps users keep track of their fitness exercises daily. I am ready to make a direct impact, utilizing abilities in quality control and complex problem-solving to find the best solutions and achieve desirable results.
 
 ## Skills
 
@@ -15,29 +15,19 @@ I am a forward-thinking Junior Data Engineer with a Bachelor's degree in Biomedi
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_OlenaHlotova](https://github.com/jarviscanada/jarvis_data_eng_OlenaHlotova)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_OlenaHlotova/tree/master/linux_sql)]: Designed a Linux Cluster Monitoring Agent that can be used to record and monitor nodes/server hardware specifications and memory usage. Implemented the project on Linux CentOS 7 using docker container running PostrgeSQL image. Created a database to keep and analyze the gathered information. Activated crontab to run a bash script every minute to collect the data and insert it into the database. Created SQL queries to detect possible host failures and average memory usage per host.
+**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_OlenaHlotova/tree/master/linux_sql)]: Designed a Linux Cluster Monitoring Agent that can be used to record and monitor nodes/server hardware specifications and memory usage. Implemented the project on Linux CentOS 7 using a Docker container running PostgreSQL image. Created a database to keep and analyze the gathered information. Activated crontab to run a bash script every minute to collect the data and insert it into the database. Created SQL queries to detect possible host failures and average memory usage per host.
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_OlenaHlotova/tree/master/core_java)]:
       
-  - Grep App: A Java app designed to imitate Linux 'grep' command. It allows user to find matching strings in files (using regex).
-  - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_OlenaHlotova/tree/master/springboot)]: Not started
-
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_OlenaHlotova/tree/master/python_data_anlytics)]: Not Started
-
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_OlenaHlotova/tree/master/hadoop)]: Not Started
-
-**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_OlenaHlotova/tree/master/spark)]: Not Started
-
-**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_OlenaHlotova/tree/master/cloud_devops)]: Not Started
+  - Grep App: Designed a Java app that imitates Linux 'grep' command. It allows the user to find matching strings in files (using regex) and saves matches in another file. The application was designed with Java 8, Lambda and Stream APIs, Apache Maven and was dockerized.
+  - Twitter App.
+  - JDBC App.
 
 
 ## Highlighted Projects
-**Web app for resturant** [[GitHub](https://github.com/jarviscanada/jarvis_profile_builder)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Daily Exercises. Telegram Bot** [[GitHub](https://github.com/olensa/tg_bot)]: Created a Telegram Bot that 'remembers' your exercise program selection and allows the user to change the days, sending you links to the exercises. The project was designed and implemented using Python and Telegram API.
 
-**Machine Learning**: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Personal website** [[GitHub](olensa.ga)]: Designed a personal website from scratch that will showcase my non-academic projects. In addition, it includes a small JavaScript game (Rock-Paper-Scissors-Lizard-Spock) and a 'Contact Me' form. To build the website, I used HTML5/CSS3, JavaScript, Python and Flask.
 
 
 ## Professional Experiences
@@ -57,5 +47,4 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_OlenaHloto
 ## Miscellaneous
 - Rice University Fundamentals of Computing Specialization (2021)
 - Freecodecamp Responsive Web Design Certificate (2021)
-- Winner
 - Secretary General of Model of United Nations
