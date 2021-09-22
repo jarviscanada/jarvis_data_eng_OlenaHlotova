@@ -13,15 +13,15 @@
 The Java Grep App was implemented to mimic the Linux CLI command `grep` 
 and allows users to search matching strings from the file system.
 There are three input arguments: regex pattern, the root directory
-and output file to save the results.
+and the output file to save the results.
 The application was developed using Java 8, Apache Maven, Java Regex and Lambda API.
 It was also Dockerized and the image was uploaded to Docker Hub.
 
 # Quick Start
 
-You can start using application using two approaches:
+You can start using the application using two approaches:
 
-1. Using `.jar` file. Make sure you have [Maven](https://maven.apache.org/download.cgi) is downloaded and installed.
+1. Using `.jar` file. Make sure you have [Maven](https://maven.apache.org/download.cgi) downloaded and installed.
     Three CLI arguments:
      * `regex` - string pattern
      * `rootDir` - root directory path
@@ -33,7 +33,7 @@ mvn clean package
 # Launch JVM and run the app
 java -cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp [regex] [rootDir] [outFile]
 ```
-2. Using Docker. Make sure you have  [Docker](https://docs.docker.com/get-docker/) installed.
+2. Using Docker. Make sure you have [Docker](https://docs.docker.com/get-docker/) downloaded and installed.
 ```
 # pull Docker image from Docker Hub
 docker pull olensa/grep
@@ -69,15 +69,15 @@ In this case, the file's content will be loaded and unloaded partially as necess
 The Java Grep App was tested on Linux CentOS 7 (running on GCP's virtual machine). 
 Testing was performed manually through the IntelliJ file configurations by providing 3 input arguments (pattern, rootDir, outfile).
 The input arguments (different regex patterns, existing/non-existing directories) 
-were manually changed and used to verify the results by comparing with original Linux `grep` command.
+were manually changed and used to verify the results by comparing them with the original Linux `grep` command.
 
 # Deployment
 
-The Grep app was deployed by creating Docker image and pushing it to the Docker Hub for easier distribution.
+The Grep app was deployed by creating a Docker image and pushing it to the Docker Hub for easier distribution.
 
 # Improvements
 
 * Show the name of the file, where the pattern was found
 * Make the app more memory efficient as mentioned above
 * Implement more Linux `grep` functions (`egrep`,`fgrep`, `agrep`)
-* Allow user to choose the character encoding - in special cases it might speed up the process.
+* Allow the user to choose the character encoding - in special cases, it might speed up the process.
