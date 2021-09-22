@@ -1,5 +1,6 @@
 package ca.jrvs.apps.grep;
 
+
 import java.io.*;
 import java.util.ArrayList;
 import org.apache.log4j.BasicConfigurator;
@@ -133,7 +134,7 @@ public class JavaGrepImp implements JavaGrep{
     try {
       javaGrepImp.process();
     } catch (Exception ex) {
-      javaGrepImp.logger.error(ex.getMessage(), ex);
+      javaGrepImp.logger.error("Error. Process Failed", ex);
     }
   }
 }
