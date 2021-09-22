@@ -1,6 +1,6 @@
 # Olena Hlotova . Jarvis Consulting
 
-I am a forward-thinking Junior Data Engineer with a Bachelor's degree in Biomedical Engineering. I have proven myself focused and diligent in managing workloads and prioritizing tasks to meet deadlines. Working at Jarvis, I participated in multiple technical projects like Linux Monitoring Agent, Java Grepp and Twitter apps in the past few years. Creating useful apps people can use makes me extremely happy. For example, I wrote a Telegram bot that helps users keep track of their fitness exercises daily. I am ready to make a direct impact, utilizing abilities in quality control and complex problem-solving to find the best solutions and achieve desirable results.
+I am a forward-thinking Junior Software Developer with a Bachelor's degree in Biomedical Engineering. I have proven myself focused and diligent in managing workloads and prioritizing tasks to meet deadlines. Working at Jarvis, I participated in multiple technical projects like Linux Monitoring Agent, Java Grepp and Twitter apps in the past few years. Creating useful apps people can use makes me extremely happy. For example, I wrote a Telegram bot that helps users keep track of their fitness exercises daily. I am ready to make a direct impact, utilizing abilities in quality control and complex problem-solving to find the best solutions and achieve desirable results.
 
 ## Skills
 
