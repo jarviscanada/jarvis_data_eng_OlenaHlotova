@@ -35,8 +35,7 @@ public abstract class DataAccessObject <T extends DataTransferObject>{
       }
       return key;
     }catch (SQLException e ){
-      logger.error("Error: No Connection", e);
-      throw new RuntimeException(e);
+      throw new RuntimeException("Error: No Connection", e);
     }
   }
 }
