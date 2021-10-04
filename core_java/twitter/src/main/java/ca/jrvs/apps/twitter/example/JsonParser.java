@@ -1,10 +1,9 @@
-package ca.jrvs.apps.twitter;
+package ca.jrvs.apps.twitter.example;
 
-import ca.jrvs.apps.twitter.dto.Company;
-import ca.jrvs.apps.twitter.dto.Dividend;
+import ca.jrvs.apps.twitter.example.dto.Company;
+import ca.jrvs.apps.twitter.example.dto.Dividend;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import java.io.IOException;
