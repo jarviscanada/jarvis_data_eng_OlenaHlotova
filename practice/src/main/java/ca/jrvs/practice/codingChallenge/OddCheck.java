@@ -6,6 +6,7 @@ package ca.jrvs.practice.codingChallenge;
 
 public class OddCheck {
 
+
   /**
    * modulo
    * Big-O: O(1)
