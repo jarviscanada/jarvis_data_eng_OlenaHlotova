@@ -51,7 +51,7 @@ public class TwitterDaoUnitTest {
     String hashtag = "#test";
     String text = "Oc1ober33 "+ hashtag;
     float lon = 15.8f;
-    float lat = -1.1f;
+    float lat = 1.1f;
 
     when(mockHelper.httpPost(isNotNull())).thenThrow(new RuntimeException("mock"));
     try {
