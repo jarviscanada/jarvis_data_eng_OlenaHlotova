@@ -58,10 +58,10 @@ public class TwitterServiceIntTest {
     String textLength = new String("Exceeded maximum number of allowed characters (280)");
 
     Tweet postWrongLat = TweetUtil.buildTweet(text, lon, wrongLat);//latitude > 90
-    String wrongLatitude = new String("Latitude is out of bounds");
+    String wrongLatitude = new String("Invalid geo position");
 
     Tweet postWrongLon= TweetUtil.buildTweet(text, wrongLon, lat);//longitude <(-180)
-    String wrongLongitude = new String("Longitude is out of bounds");
+    String wrongLongitude = new String("Invalid geo position");
 
     // Invalid tests
 
@@ -90,7 +90,7 @@ public class TwitterServiceIntTest {
   public void showTweet() throws JsonProcessingException {
 
     //valid inputs and tests
-    String validId = "1446227280087425024";
+    String validId = "1448053157523820550";
     String[] validFields = {"created_at",
         "id",
         "id_str",
@@ -133,7 +133,7 @@ public class TwitterServiceIntTest {
   @Test
   public void deleteTweets() throws JsonProcessingException {
     //valid inputs and tests
-    String[] validIds = {"1446227280087425024", "1446225150853136391"};
+    String[] validIds = {"1448053157523820550"};
     List<Tweet> tweets = service.deleteTweets(validIds);
     String tweeted = "rainy_days";
     for(Tweet tweet : tweets) {
@@ -145,7 +145,7 @@ public class TwitterServiceIntTest {
 
     //invalid inputs and tests
     String[] invalidIds = {"Should be numerical", "Not numerical"};
-    String invalidIdsError = "nvalid ID. Must be numerical";
+    String invalidIdsError = "Invalid ID. Must be numerical";
     try{
       service.deleteTweets(invalidIds);
       fail();
