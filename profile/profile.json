@@ -20,7 +20,7 @@
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_OlenaHlotova",
   "highlighted_projects": [
     {
-      "description": "Created a Telegram Bot that 'remembers' your exercise program selection and allows the user to change the days, sending you links to the exercises. The project was designed and implemented using Python and Telegram API.",
+      "description": "Created a Telegram Bot that 'remembers' your exercise program selection and allows to change the days, sending you links to the exercises. The project was designed and implemented using Python and Telegram API.",
       "git_url": "https://github.com/olensa/tg_bot",
       "name": "Daily Exercises. Telegram Bot"
     },
@@ -39,8 +39,8 @@
     {
       "description": [
         "Grep App: Designed a Java app that imitates Linux 'grep' command. It allows the user to find matching strings in files (using regex) and saves matches in another file. The application was designed with Java 8, Lambda and Stream APIs, Apache Maven and was dockerized.",
-        "Twitter App.",
-        "JDBC App."
+        "Twitter App. Developed a Twitter Command Line Interface (CLI), which allows user to create, read and delete posts using the command line. The application was created and tested using Java, Twitter API, Spring, JUnit and Mockito framework.",
+        "JDBC App: Implemented JDBC application to execute CRUD (create, read, update, delete) operations on PostgreSQL databases. The project was built with PostgreSQL Docker image, Java 8, JDBC API, Maven project management system and SQL."
       ],
       "git_url": "/core_java",
       "name": "Core Java Apps"
@@ -92,12 +92,13 @@
       "Machine Learning"
     ],
     "proficient": [
-      "Java",
+      "Python",
       "Linux/Bash",
       "RDBMS/SQL",
       "Agile/Scrum",
-      "Git"
+      "Git",
+      "Java"
     ]
   },
-  "summary": "I am a forward-thinking Junior Software Developer with a Bachelor's degree in Biomedical Engineering. I have proven myself focused and diligent in managing workloads and prioritizing tasks to meet deadlines. Working at Jarvis, I participated in multiple technical projects like Linux Monitoring Agent, Java Grepp and Twitter apps in the past few years. Creating useful apps people can use makes me extremely happy. For example, I wrote a Telegram bot that helps users keep track of their fitness exercises daily. I am ready to make a direct impact, utilizing abilities in quality control and complex problem-solving to find the best solutions and achieve desirable results."
+  "summary": "I am a forward-thinking Junior Software Developer with a Bachelor's degree in Biomedical Engineering. I have proven myself focused and diligent in managing workloads and prioritizing tasks to meet deadlines. Working at Jarvis, I participated in multiple technical projects like Linux Monitoring Agent, Java Grepp and Twitter apps. I like to develop practical and simple applications. For example, I designed and implemented a Telegram bot that helps user to choose a desired program and then to keep track of their fitness exercises daily. I am ready to make a direct impact, utilizing abilities in quality control and complex problem-solving to find the best solutions and achieve desirable results."
 }
