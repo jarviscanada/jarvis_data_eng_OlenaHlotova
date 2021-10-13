@@ -20,7 +20,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_OlenaHloto
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_OlenaHlotova/tree/master/core_java)]:
       
   - Grep App: Designed a Java app that imitates Linux 'grep' command. It allows the user to find matching strings in files (using regex) and saves matches in another file. The application was designed with Java 8, Lambda and Stream APIs, Apache Maven and was dockerized.
-  - Twitter App. Developed a Twitter Command Line Interface (CLI), which allows user to create, read and delete posts using the command line. The application was created and tested using Java, Twitter API, Spring, JUnit and Mockito framework.
+  - Twitter App. Developed a Twitter Command Line Interface (CLI), which allows user to create, read and delete posts using the command line. The application was created and tested using Java, Twitter API, JUnit and Mockito framework.
   - JDBC App: Implemented JDBC application to execute CRUD (create, read, update, delete) operations on PostgreSQL databases. The project was built with PostgreSQL Docker image, Java 8, JDBC API, Maven project management system and SQL.
 
 
