@@ -78,11 +78,12 @@ public class TwitterService implements Service{
         "favorited",
         "retweeted"
     };
+    Arrays.sort(valid);
     //check if input fields are correct
     if (fields != null) {
       Arrays.stream(fields).forEach((field) -> {
         if (Arrays.binarySearch(valid, field) == -1) {
-          throw new IllegalArgumentException("Invalid field");
+          throw new IllegalArgumentException("Invalid field"+field);
         }
       });
     }

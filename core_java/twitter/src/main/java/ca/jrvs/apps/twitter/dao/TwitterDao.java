@@ -45,7 +45,7 @@ public class TwitterDao implements CrdDao<Tweet, String>{
     URI uri;
     uri = getPostUri(entity);
     HttpResponse response = httpHelper.httpPost(uri);
-    System.out.println(response.getAllHeaders());
+    //System.out.println(response.getAllHeaders());
     return parseResponseBody(response, HTTP_OK);
   }
 

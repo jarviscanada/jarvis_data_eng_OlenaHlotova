@@ -15,9 +15,10 @@ public class TwitterDaoIntTest {
 
   public TwitterDao dao;
   public String hashtag = "#Test";
-  public String text = "@someone sss "+hashtag;
+  static String text;
   public float lat = 22.99f;
   public float lon = -19.088f;
+  static String id;
   @Before
   public void setup() throws Exception{
     String consumerKey = System.getenv("consumerKey");
@@ -33,14 +34,16 @@ public class TwitterDaoIntTest {
 
   @Test
   public void create() throws JsonProcessingException {
-
+    text = "someone_test "+hashtag + " " + System.currentTimeMillis();
     Tweet postTweet = TweetUtil.buildTweet(text, lon, lat);
     System.out.println(JsonUtil.toJson(postTweet, true, false));
-
     Tweet tweet = dao.create(postTweet);
+    id = tweet.getId_str();
+    System.out.println(id);
+
     assertEquals(text, tweet.getText());
     assertNotNull(tweet.getCoordinates());
-    assertEquals(3, tweet.getCoordinates().getCoordinates().length);
+    assertEquals(2, tweet.getCoordinates().getCoordinates().length);
     assertEquals(lon, tweet.getCoordinates().getCoordinates()[0], 0.0);
     assertEquals(lat, tweet.getCoordinates().getCoordinates()[1], 0.0);
     assertTrue(hashtag.contains(tweet.getEntities().getHashtags()[0].getText()));
@@ -49,7 +52,8 @@ public class TwitterDaoIntTest {
 
   @Test
   public void findById() throws JsonProcessingException {
-    String id = "1446224785604636674";
+    //String id = "1448122607086231554";
+    System.out.println(id);
     Tweet tweet = dao.findById(id);
 
     System.out.println(JsonUtil.toJson(tweet, true, false));
@@ -64,7 +68,8 @@ public class TwitterDaoIntTest {
 
   @Test
   public void deleteById() throws JsonProcessingException {
-    String id = "1446224785604636674";
+    //String id = "1448122607086231554";
+    System.out.println(id);
     Tweet tweet = dao.deleteById(id);
     System.out.println(JsonUtil.toJson(tweet, true, false));
 

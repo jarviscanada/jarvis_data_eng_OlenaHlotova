@@ -20,12 +20,14 @@ import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
 public class TwitterDaoUnitTest {
+
   @Mock
   HttpHelper mockHelper;
 
   @InjectMocks
   TwitterDao dao;
 
+  
   String tweetJsonStr = "{\n"
       + "   \"created_at\":\"Mon Feb 18 21:24:39 +0000 2019\",\n"
       + "   \"id\":1097607853932564480,\n"
@@ -49,7 +51,7 @@ public class TwitterDaoUnitTest {
   public void postTweet() throws Exception {
     //test failed request
     String hashtag = "#test";
-    String text = "Oc1ober33 "+ hashtag;
+    String text = "Oc1ober33 "+ hashtag + " " + System.currentTimeMillis();
     float lon = 15.8f;
     float lat = 1.1f;
 

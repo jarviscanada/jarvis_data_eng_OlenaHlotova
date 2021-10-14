@@ -12,15 +12,20 @@ import ca.jrvs.apps.twitter.util.TweetUtil;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import java.util.List;
 import org.junit.Before;
+import org.junit.FixMethodOrder;
 import org.junit.Test;
-
+import org.junit.runners.MethodSorters;
+import org.springframework.core.annotation.Order;
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class TwitterServiceIntTest {
   public TwitterDao dao;
   public String hashtag = "#Test";
-  public String text = "work1ng? "+hashtag;
+  static String text;
   public float lat = 22.99f;
   public float lon = -19.088f;
   private TwitterService service;
+  static String id;
+  static String tweetText;
 
   @Before
   public void setUp() throws Exception {
@@ -35,12 +40,17 @@ public class TwitterServiceIntTest {
   }
 
   @Test
-  public void postTweet() throws JsonProcessingException {
+  public void apostTweet() throws JsonProcessingException {
 
     //valid input and tests
+    text = "work1ng? "+hashtag + " " + System.currentTimeMillis();
     Tweet postTweet = TweetUtil.buildTweet(text, lon, lat);
     Tweet tweet = service.postTweet(postTweet);
-    assertEquals(text, tweet.getText());
+    id = tweet.getId_str();
+    System.out.println(id);
+    tweetText = tweet.getText();
+    System.out.println(tweetText);
+    assertEquals(text, tweetText);
     assertEquals(lon, tweet.getCoordinates().getCoordinates()[0], 0);
     assertEquals(lat, tweet.getCoordinates().getCoordinates()[1], 0);
     assertTrue(hashtag.contains(tweet.getEntities().getHashtags()[0].getText()));
@@ -87,10 +97,8 @@ public class TwitterServiceIntTest {
   }
 
   @Test
-  public void showTweet() throws JsonProcessingException {
-
+  public void bshowTweet() throws JsonProcessingException {
     //valid inputs and tests
-    String validId = "1448053157523820550";
     String[] validFields = {"created_at",
         "id",
         "id_str",
@@ -102,18 +110,18 @@ public class TwitterServiceIntTest {
         "favorited",
         "retweeted"
     };
-    Tweet tweet = service.showTweet(validId, validFields);
-    assertEquals(text, tweet.getText());
+    Tweet tweet = service.showTweet(id, validFields);
+    assertEquals(text, tweetText);
     assertEquals(lon, tweet.getCoordinates().getCoordinates()[0], 0);
     assertEquals(lat, tweet.getCoordinates().getCoordinates()[1], 0);
     assertTrue(hashtag.contains(tweet.getEntities().getHashtags()[0].getText()));
 
     //invalid inputs and tests
     String invalidId = "Should be numerical";
-    String idError = "ID must be numerical characters.";
+    String idError = "Invalid ID. Must be numerical";
 
-    String[] invalidFields = {"wrong_field1", "wrong_field2", "wrong_field3"};
-    String fieldsError = "Invalid or Missing Fields(s)";
+    String[] invalidFields = {"", "", ""};
+    String fieldsError = "Invalid field";
 
     try {
       service.showTweet(invalidId, validFields);
@@ -122,7 +130,7 @@ public class TwitterServiceIntTest {
       assertEquals(idError, e.getMessage());
     }
     try {
-      service.showTweet(validId, invalidFields);
+      service.showTweet(id, invalidFields);
       fail();
     }catch (IllegalArgumentException e) {
       assertEquals(fieldsError, e.getMessage());
@@ -133,11 +141,11 @@ public class TwitterServiceIntTest {
   @Test
   public void deleteTweets() throws JsonProcessingException {
     //valid inputs and tests
-    String[] validIds = {"1448053157523820550"};
-    List<Tweet> tweets = service.deleteTweets(validIds);
-    String tweeted = "rainy_days";
+    System.out.println(id);
+    String[] Ids = {id};
+    List<Tweet> tweets = service.deleteTweets(Ids);
     for(Tweet tweet : tweets) {
-      assertTrue((text.equals(tweet.getText())) || tweeted.equals(tweet.getText()));
+      assertTrue((text.equals(tweet.getText())) || tweetText.equals(tweet.getText()));
       assertEquals(lon, tweet.getCoordinates().getCoordinates()[0], 0);
       assertEquals(lat, tweet.getCoordinates().getCoordinates()[1], 0);
       assertTrue(hashtag.contains(tweet.getEntities().getHashtags()[0].getText()));
