@@ -34,7 +34,7 @@ public class TwitterDao implements CrdDao<Tweet, String>{
 
   private HttpHelper httpHelper;
 
-  @Autowired
+  
   static final Logger logger = LoggerFactory.getLogger(TwitterDao.class);
 
   @Autowired
