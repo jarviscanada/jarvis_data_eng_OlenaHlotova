@@ -5,8 +5,10 @@ import ca.jrvs.apps.twitter.model.Tweet;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
 
 
+@org.springframework.stereotype.Service
 public class TwitterService implements Service{
 
   private CrdDao dao;
@@ -17,6 +19,7 @@ public class TwitterService implements Service{
   private static final float LAT_MIN = -90;
   private static final float LAT_MAX = 90;
 
+  @Autowired
   public TwitterService(CrdDao dao) {
     this.dao = dao;
   }
@@ -75,11 +78,12 @@ public class TwitterService implements Service{
         "favorited",
         "retweeted"
     };
+    Arrays.sort(valid);
     //check if input fields are correct
     if (fields != null) {
       Arrays.stream(fields).forEach((field) -> {
         if (Arrays.binarySearch(valid, field) == -1) {
-          throw new IllegalArgumentException("Invalid field");
+          throw new IllegalArgumentException("Invalid field"+field);
         }
       });
     }

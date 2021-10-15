@@ -14,7 +14,9 @@ import org.apache.http.util.EntityUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class TwitterDao implements CrdDao<Tweet, String>{
 
   //URI constants
@@ -31,6 +33,8 @@ public class TwitterDao implements CrdDao<Tweet, String>{
   private static final int HTTP_OK = 200;
 
   private HttpHelper httpHelper;
+
+  
   static final Logger logger = LoggerFactory.getLogger(TwitterDao.class);
 
   @Autowired
@@ -41,7 +45,7 @@ public class TwitterDao implements CrdDao<Tweet, String>{
     URI uri;
     uri = getPostUri(entity);
     HttpResponse response = httpHelper.httpPost(uri);
-    System.out.println(response.getAllHeaders());
+    //System.out.println(response.getAllHeaders());
     return parseResponseBody(response, HTTP_OK);
   }
 
