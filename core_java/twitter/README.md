@@ -136,7 +136,7 @@ JUnit required the exported environmental variables (Twitter keys and tokens).
 For each tested class method, Assertions were used to test, 
 if the actual result of the method is what we expect or not. 
 
-Mockito framework was used to test a class but not the dependencies. Mockito created a *mock objects* 
+**Mockito** framework was used to test a class but not the dependencies. Mockito created a *mock objects* 
 (dummy implementations) of our classes. Mockito did not require Twitter keys and tokens.
 So it helped us to test classes functionality in a 'closed environment' 
 without even using the relations between classes.
