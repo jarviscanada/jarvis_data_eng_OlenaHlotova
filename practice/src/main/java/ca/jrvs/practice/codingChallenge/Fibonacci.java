@@ -38,7 +38,7 @@ public class Fibonacci {
     }if (n <=1) {
       return n;
     } else {
-      result = fib(n-1) + fib(n-2);
+      result = fibDynamic(n-1, memo) + fibDynamic(n-2, memo);
       memo.set(n, result);
       return result;
     }
