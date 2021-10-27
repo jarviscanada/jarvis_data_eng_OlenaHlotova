@@ -25,6 +25,10 @@ public class ValidAnagram {
   }
 
   public boolean isAnagramSort(String s, String t) {
+    if(s==null || t==null)
+      return false;
+    if(s.length()!=t.length())
+      return false;
     char[] sortedS = s.toCharArray();
     Arrays.sort(sortedS);
     String sS = new String(sortedS);
