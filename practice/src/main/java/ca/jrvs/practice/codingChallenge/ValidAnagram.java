@@ -31,7 +31,7 @@ public class ValidAnagram {
     char[] sortedT = t.toCharArray();
     Arrays.sort(sortedT);
     String sT = new String(sortedT);
-    if (sS != sT){
+    if (!sS.equals(sT)){
       return false;
     }
     return true;
