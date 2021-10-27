@@ -1,5 +1,7 @@
 package ca.jrvs.practice.codingChallenge;
 
+import java.util.Arrays;
+
 public class ValidAnagram {
 
   public boolean isAnagram (String s, String t) {
@@ -20,6 +22,20 @@ public class ValidAnagram {
     }
 
     return true;
+  }
+
+  public boolean isAnagramSort(String s, String t) {
+    char[] sortedS = s.toCharArray();
+    Arrays.sort(sortedS);
+    String sS = new String(sortedS);
+    char[] sortedT = t.toCharArray();
+    Arrays.sort(sortedT);
+    String sT = new String(sortedT);
+    if (sS != sT){
+      return false;
+    }
+    return true;
+
   }
 
 }
