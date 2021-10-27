@@ -1,9 +1,14 @@
 package ca.jrvs.practice.codingChallenge;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ValidAnagram {
 
+  /**
+   * O(n)
+   */
   public boolean isAnagram (String s, String t) {
     if(s==null || t==null)
       return false;
@@ -24,6 +29,10 @@ public class ValidAnagram {
     return true;
   }
 
+  /**
+   * O(nlogn)
+   * Sorting will take the most time
+   */
   public boolean isAnagramSort(String s, String t) {
     if(s==null || t==null)
       return false;
