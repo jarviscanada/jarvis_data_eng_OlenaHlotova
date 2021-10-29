@@ -3,7 +3,7 @@ package ca.jrvs.practice.codingChallenge;
 /**
  * https://www.notion.so/jarvisdev/Count-Primes-ce436e4baa1d4f638321291954534550
  * Count Primes
- * O()
+ * O(Nlog(logN))
  */
 
 public class CountPrimes {
