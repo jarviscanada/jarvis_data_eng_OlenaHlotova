@@ -1,14 +1,14 @@
 # Olena Hlotova . Jarvis Consulting
 
-I am a forward-thinking Junior Software Developer with a Bachelor's degree in Biomedical Engineering. I have proven myself focused and diligent in managing workloads and prioritizing tasks to meet deadlines. Working at Jarvis, I participated in multiple technical projects like Linux Monitoring Agent, Java Grepp and Twitter apps. I like to develop practical and simple applications. For example, I designed and implemented a Telegram bot that helps user to choose a desired program and then to keep track of their fitness exercises daily. I am ready to make a direct impact, utilizing abilities in quality control and complex problem-solving to find the best solutions and achieve desirable results.
+I am a forward-thinking Junior Software Developer with a Bachelor's degree in Biomedical Engineering. I have proven myself focused and diligent in managing workloads and prioritizing tasks to meet deadlines. Working at Jarvis, I participated in multiple technical projects like Linux Monitoring Agent, Java Grep and Twitter apps. I like to develop practical and simple applications. For example, I designed and implemented a Telegram bot that helps user to choose a desired program and then to keep track of their fitness exercises daily. I am ready to make a direct impact, utilizing abilities in quality control and complex problem-solving to find the best solutions and achieve desirable results.
 
 ## Skills
 
 **Proficient:** Python, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git, Java
 
-**Competent:** Pandas, NumPy, HTML/CSS, Docker, Keras
+**Competent:** Pandas, NumPy, HTML/CSS, Docker, Keras, REST API
 
-**Familiar:** Google Cloud Platform, TensorFlow 2.0, JavaScript, Flask, Machine Learning
+**Familiar:** Google Cloud Platform, TensorFlow 2.0, JavaScript, Flask, Machine Learning, Spring
 
 ## Jarvis Projects
 
@@ -20,14 +20,14 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_OlenaHloto
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_OlenaHlotova/tree/master/core_java)]:
       
   - Grep App: Designed a Java app that imitates Linux 'grep' command. It allows the user to find matching strings in files (using regex) and saves matches in another file. The application was designed with Java 8, Lambda and Stream APIs, Apache Maven and was dockerized.
-  - Twitter App. Developed a Twitter Command Line Interface (CLI), which allows user to create, read and delete posts using the command line. The application was created and tested using Java, Twitter API, JUnit and Mockito framework.
+  - Twitter App. Developed a Twitter Command Line Interface (CLI), which allows user to create, read and delete posts using the command line. The application was created and tested using Java, Twitter API, Spring, JUnit and Mockito framework.
   - JDBC App: Implemented JDBC application to execute CRUD (create, read, update, delete) operations on PostgreSQL databases. The project was built with PostgreSQL Docker image, Java 8, JDBC API, Maven project management system and SQL.
 
 
 ## Highlighted Projects
 **Daily Exercises. Telegram Bot** [[GitHub](https://github.com/olensa/tg_bot)]: Created a Telegram Bot that 'remembers' your exercise program selection and allows to change the days, sending you links to the exercises. The project was designed and implemented using Python and Telegram API.
 
-**Personal website** [[GitHub](olensa.ga)]: Designed a personal website from scratch that will showcase my non-academic projects. In addition, it includes a small JavaScript game (Rock-Paper-Scissors-Lizard-Spock) and a 'Contact Me' form. To build the website, I used HTML5/CSS3, JavaScript, Python and Flask.
+**Personal website**: Designed a personal website from scratch that will showcase my non-academic projects. In addition, it includes a small JavaScript game (Rock-Paper-Scissors-Lizard-Spock) and a 'Contact Me' form. To build the website, I used HTML5/CSS3, JavaScript, Python and Flask.
 
 
 ## Professional Experiences

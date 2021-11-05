@@ -26,7 +26,6 @@
     },
     {
       "description": "Designed a personal website from scratch that will showcase my non-academic projects. In addition, it includes a small JavaScript game (Rock-Paper-Scissors-Lizard-Spock) and a 'Contact Me' form. To build the website, I used HTML5/CSS3, JavaScript, Python and Flask.",
-      "git_url": "olensa.ga",
       "name": "Personal website"
     }
   ],
@@ -39,7 +38,7 @@
     {
       "description": [
         "Grep App: Designed a Java app that imitates Linux 'grep' command. It allows the user to find matching strings in files (using regex) and saves matches in another file. The application was designed with Java 8, Lambda and Stream APIs, Apache Maven and was dockerized.",
-        "Twitter App. Developed a Twitter Command Line Interface (CLI), which allows user to create, read and delete posts using the command line. The application was created and tested using Java, Twitter API, JUnit and Mockito framework.",
+        "Twitter App. Developed a Twitter Command Line Interface (CLI), which allows user to create, read and delete posts using the command line. The application was created and tested using Java, Twitter API, Spring, JUnit and Mockito framework.",
         "JDBC App: Implemented JDBC application to execute CRUD (create, read, update, delete) operations on PostgreSQL databases. The project was built with PostgreSQL Docker image, Java 8, JDBC API, Maven project management system and SQL."
       ],
       "git_url": "/core_java",
@@ -82,14 +81,16 @@
       "NumPy",
       "HTML/CSS",
       "Docker",
-      "Keras"
+      "Keras",
+      "REST API"
     ],
     "familiar": [
       "Google Cloud Platform",
       "TensorFlow 2.0",
       "JavaScript",
       "Flask",
-      "Machine Learning"
+      "Machine Learning",
+      "Spring"
     ],
     "proficient": [
       "Python",
@@ -100,5 +101,5 @@
       "Java"
     ]
   },
-  "summary": "I am a forward-thinking Junior Software Developer with a Bachelor's degree in Biomedical Engineering. I have proven myself focused and diligent in managing workloads and prioritizing tasks to meet deadlines. Working at Jarvis, I participated in multiple technical projects like Linux Monitoring Agent, Java Grepp and Twitter apps. I like to develop practical and simple applications. For example, I designed and implemented a Telegram bot that helps user to choose a desired program and then to keep track of their fitness exercises daily. I am ready to make a direct impact, utilizing abilities in quality control and complex problem-solving to find the best solutions and achieve desirable results."
+  "summary": "I am a forward-thinking Junior Software Developer with a Bachelor's degree in Biomedical Engineering. I have proven myself focused and diligent in managing workloads and prioritizing tasks to meet deadlines. Working at Jarvis, I participated in multiple technical projects like Linux Monitoring Agent, Java Grep and Twitter apps. I like to develop practical and simple applications. For example, I designed and implemented a Telegram bot that helps user to choose a desired program and then to keep track of their fitness exercises daily. I am ready to make a direct impact, utilizing abilities in quality control and complex problem-solving to find the best solutions and achieve desirable results."
 }
