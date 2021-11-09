@@ -76,7 +76,7 @@ will need to create a view and cast String columns as other datatype.
 
 ![](assets/hadoop.png)
 
-#Improvements
+# Improvements
 
 * Use appropriate file formats such as the Optimized Row Columnar (ORC) to increase query performance. 
 ORC reduces the original data size by up to 75 percent
