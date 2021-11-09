@@ -72,7 +72,7 @@ However, Spark can only work with data that can fit into distributed RAM.
 However, SerDe has a limitation of a datatype it can work with. It only accepts String. To solve it, the user
 will need to create a view and cast String columns as other datatype.
 
-#### My Zeppelin Notebook with Hive queries
+#### [My Zeppelin Notebook with Hive queries](hive/hive.ipynb)
 
 ![](assets/hadoop.png)
 
