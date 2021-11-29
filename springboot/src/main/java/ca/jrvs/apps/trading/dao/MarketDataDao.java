@@ -172,7 +172,7 @@ public class MarketDataDao implements CrudRepository<IexQuote, String> {
 //  public static void main(String[] args) throws IOException {
 //    MarketDataConfig m = new MarketDataConfig();
 //    m.setHost("https://cloud.iexapis.com/v1");
-//    m.setToken("pk_ebca0853d10b4040ae12fea1f5445f52");
+//    m.setToken("");
 //    MarketDataDao tt = new MarketDataDao(null, m);
 //    List <String> aa = new ArrayList<String>();
 //    aa.add("AAPL");
